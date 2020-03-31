@@ -1,0 +1,8 @@
+  
+#pyhton program to count the values in dictionary
+
+dictionary = {"Rick": 85, "Amit": 42, "George": 53, "Tanya": 60, "Linda": 35}
+count = 0
+for dict_values in dictionary:#using loop fetching one dictionary at a time
+  count = count + dictionary[dict_values] # add the dictionary values
+print(count)
