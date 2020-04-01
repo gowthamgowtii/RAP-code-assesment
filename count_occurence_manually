@@ -1,0 +1,20 @@
+#finding the no. of occurences using manual count
+
+lst = [1, 2, 3, 5, 8, 4, 7, 9, 1, 4, 12, 5, 6, 5, 2, 1, 0, 8, 1] #array
+dic = [] # empty list
+for i in lst: # iterating one by one
+    count = 0 # creating the count variable with value 0
+    for j in lst: # again iterating the loop one by one
+        if j == i: #cheking the condition
+            count = count+1 # if condition satisfy add 1 to count
+            dict = {i:count} # creating the dictionary
+    dic.append(dict) #appending the dictionary to dic list
+di = [] # new empty list
+for k in dic: # iterating the dictionary list one by one
+    if k not in di: #checking that is already in di list
+        di.append(k) #if not appending to di list
+for i in di:#iterating the di list and print one by one
+    print(i,end="")
+# Output of the program
+# {1: 4}{2: 2}{3: 1}{5: 3}{8: 2}{4: 2}{7: 1}{9: 1}{12: 1}{6: 1}{0: 1}
+    
